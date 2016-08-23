@@ -1,0 +1,84 @@
+<!--<style>
+  table{
+border:2px solid black;
+padding: 5px;
+spacing: 5px;
+}
+th{
+padding: 5px;
+spacing: 5px;
+}
+
+td{
+padding-right: 20px;
+}
+</style>-->
+<style>
+.sidebar {
+    background: #3399ff;
+    /*position: absolute;*/
+    height: 400px;
+    width: 400px;
+    /*margin: -100px 0 0 -200px;*/
+    top: 50%;
+    left: 50%; 
+}
+div{
+   margin-bottom:15px;
+}
+
+label {
+    width:180px;
+    clear:left;
+    text-align:left;
+    padding-right:30px;
+}
+
+label {
+    float:left;
+}
+</style>
+
+<div class= "sidebar" align="left">
+  <div>
+    <label>First Name</label>
+    <input type="text" ng-model="firstName">
+  </div><br/><br/>
+  <div>
+    <label>Last Name</label>
+    <input type="text" ng-model="lastName">
+  </div><br/>
+  <div>
+    <label>University Name</label>
+    <input type="text" ng-model="UniversityName">
+  </div><br/>
+  <div>
+    <label>Field</label>
+   <select ng-model="field">
+        <option>Computer Technology</option>
+        <option>IT</option>
+        <option>MIS</option>
+     </select>
+  </div><br/>
+   <div>
+    <label>Phone Number</label>
+    <input type="number" ng-model="phonenumber">
+  </div><br/>
+  <div>
+    <label>Email Address</label>
+    <input type="email" ng-model="email">
+  </div><br/>
+  <div>
+    <label>Bachelors Grade</label>
+    <input type="radio" ng-model="percentage" value="A+">A+</td>
+    <input type="radio" ng-model="percentage" value="A">A</td>
+    <input type="radio" ng-model="percentage" value="B">B</td>
+    <input type="radio" ng-model="percentage" value="C">C</td>    
+  </div>
+</div>
+<div style="text-align:center" style="background-color:red">
+ <div>
+    <input type="submit" data-ng-click="submitBtn()"></input><br/> 
+    <span data-ng-bind="registration"></span>
+ </div> 
+</div>
